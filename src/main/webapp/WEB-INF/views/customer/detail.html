@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="/customer/layout::css">    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/}">Back Menu</a>
+<h1>Detail</h1>
+<h2 th:text="${customer.id}"></h2>
+<h2 th:text="${customer.name}"></h2>
+<h2 th:text="${customer.address}"></h2>
+</body>
+</html>
